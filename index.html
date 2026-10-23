@@ -169,6 +169,19 @@
     .chip { background: var(--surface-2); border: 1px solid var(--border); padding: 4px 10px; border-radius: 999px; font-size: .85rem; color: var(--text); }
     .chip.hl { background: var(--accent-soft); border-color: transparent; color: var(--accent); font-weight: 600; }
 
+    /* Experience */
+    .job { display: flex; flex-direction: column; gap: 16px; }
+    .job-head { display: flex; justify-content: space-between; align-items: start; gap: 16px; flex-wrap: wrap; }
+    .job h3 { margin: 0 0 4px; font-size: 1.25rem; }
+    .job-co { color: var(--muted); font-weight: 500; }
+    .job-dates { background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: .85rem; padding: 6px 12px; border-radius: 999px; white-space: nowrap; }
+    .job-intro { margin: 0; }
+    .job-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 28px; }
+    .job h4 { margin: 0 0 6px; font-size: .95rem; color: var(--accent-2); }
+    .job ul { margin: 0; padding-left: 18px; }
+    .job li { margin: 5px 0; }
+    @media (max-width: 860px) { .job-grid { grid-template-columns: 1fr; } }
+
     /* Projects */
     .projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
     .project { display: flex; flex-direction: column; gap: 14px; }
@@ -234,6 +247,7 @@
       <a class="brand" href="#top">Nishat<span>.</span>QA</a>
       <nav class="nav-links" id="nav">
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#approach">Approach</a>
@@ -291,12 +305,12 @@
         <div>
           <div class="eyebrow">About me</div>
           <h2 class="section-title">Quality for products that think</h2>
-          <p>I'm a QA tester with a computer science background and 5 years in IT, most recently at Leoforce in India. I've worked hands-on with software testing, and I'm also strong at prioritising tasks and coordinating with teams.</p>
+          <p>I'm a QA tester with a computer science background and 5 years in IT. Since November 2023 I've been a <b>QA Software Tester at Leoforce</b>, a product company, where I test an AI-powered recruiting platform end to end, from user stories to release sign-off. That includes checking that its AI agent understands prompts and recommends the right candidates.</p>
           <p>Today I focus on <b>testing AI products</b>. AI answers change from one run to the next, so my tests check <b>key facts and behaviour</b> instead of exact wording. I look for hallucinations, inconsistent answers, prompt injection and slow responses, and I automate those checks so they run on every change.</p>
         </div>
         <div class="card">
           <ul class="facts">
-            <li><span>Role</span><b>QA Tester / SQA Engineer</b></li>
+            <li><span>Current role</span><b>QA Software Tester, Leoforce</b></li>
             <li><span>Focus</span><b>LLM chatbots &amp; voice agents</b></li>
             <li><span>Location</span><b>Dubai, UAE</b></li>
             <li><span>Availability</span><b>Immediate</b></li>
@@ -307,8 +321,62 @@
       </div>
     </section>
 
+    <!-- Experience -->
+    <section id="experience" style="background:var(--surface-2)">
+      <div class="wrap">
+        <div class="eyebrow">Experience</div>
+        <h2 class="section-title">Work experience</h2>
+        <p class="section-sub">Hands-on QA in an Agile team at a product company, covering manual testing, automation and AI agent testing.</p>
+        <article class="card job">
+          <div class="job-head">
+            <div>
+              <h3>QA Software Tester – Manual &amp; Automation</h3>
+              <div class="job-co">Leoforce · Product company · Full-time · Hybrid</div>
+            </div>
+            <span class="job-dates">Nov 2023 – Present</span>
+          </div>
+          <p class="job-intro">I test <b>Connect 2.0</b>, an AI-powered recruiting platform, across its job management, candidate search, pipeline and SMS/email communication modules.</p>
+          <div class="job-grid">
+            <div>
+              <h4>AI agent testing</h4>
+              <ul>
+                <li>Validate the AI agent's behaviour with varied prompts, search queries and job criteria, and check that it understands the intent and returns the right results</li>
+                <li>Flag cases where the bot misreads a prompt, returns irrelevant candidates or ranks matches incorrectly</li>
+                <li>Cross-check AI candidate recommendations against the actual job requirements and the database, so the candidates it surfaces are accurate and relevant</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Functional &amp; regression testing</h4>
+              <ul>
+                <li>Review user stories and acceptance criteria, then design and run functional, regression, smoke and sanity test cases</li>
+                <li>Validate data consistency across the UI, API responses and the database, and confirm status updates show everywhere</li>
+                <li>Log and track defects in JIRA with clear steps to reproduce, retest fixes and run regression on the affected areas</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Automation &amp; API</h4>
+              <ul>
+                <li>Build UI automation with Playwright (JavaScript/TypeScript) for reusable end-to-end regression flows, version-controlled in Git/GitHub</li>
+                <li>Validate REST APIs with Postman and pick stable scenarios for automated regression coverage</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Agile process</h4>
+              <ul>
+                <li>Take part in daily stand-ups and sprint ceremonies</li>
+                <li>Give QA sign-off before each release</li>
+              </ul>
+            </div>
+          </div>
+          <div class="chips">
+            <span class="chip hl">AI agent testing</span><span class="chip hl">Playwright</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip hl">Postman</span><span class="chip">JIRA</span><span class="chip">SQL / database checks</span><span class="chip">Git/GitHub</span><span class="chip">Agile/Scrum</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!-- Skills -->
-    <section id="skills" style="background:var(--surface-2)">
+    <section id="skills">
       <div class="wrap">
         <div class="eyebrow">Skills</div>
         <h2 class="section-title">What I work with</h2>
@@ -323,7 +391,7 @@
           <div class="card skill">
             <h3>Test automation</h3>
             <div class="chips">
-              <span class="chip hl">Playwright</span><span class="chip hl">JavaScript</span><span class="chip hl">Python</span><span class="chip hl">pytest</span><span class="chip">Data-driven tests</span>
+              <span class="chip hl">Playwright</span><span class="chip hl">JavaScript</span><span class="chip">TypeScript</span><span class="chip hl">Python</span><span class="chip hl">pytest</span><span class="chip">Data-driven tests</span>
             </div>
           </div>
           <div class="card skill">
@@ -341,13 +409,13 @@
           <div class="card skill">
             <h3>Test design</h3>
             <div class="chips">
-              <span class="chip hl">Test plans</span><span class="chip hl">Test cases</span><span class="chip hl">Boundary values</span><span class="chip hl">Bug reports</span><span class="chip">Risk-based testing</span>
+              <span class="chip hl">Test plans</span><span class="chip hl">Test cases</span><span class="chip hl">Boundary values</span><span class="chip hl">Bug reports</span><span class="chip">Functional</span><span class="chip">Regression</span><span class="chip">Smoke &amp; sanity</span><span class="chip">Risk-based testing</span>
             </div>
           </div>
           <div class="card skill">
             <h3>Tools &amp; CI</h3>
             <div class="chips">
-              <span class="chip hl">GitHub Actions</span><span class="chip hl">Git &amp; GitHub</span><span class="chip">Excel</span><span class="chip">Word</span><span class="chip">Outlook</span><span class="chip">PowerPoint</span>
+              <span class="chip hl">GitHub Actions</span><span class="chip hl">Git &amp; GitHub</span><span class="chip">JIRA</span><span class="chip">SQL</span><span class="chip">Agile/Scrum</span><span class="chip">Excel</span><span class="chip">Word</span><span class="chip">Outlook</span><span class="chip">PowerPoint</span>
             </div>
           </div>
         </div>
@@ -355,7 +423,7 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects">
+    <section id="projects" style="background:var(--surface-2)">
       <div class="wrap">
         <div class="eyebrow">Projects</div>
         <h2 class="section-title">Portfolio projects</h2>
@@ -419,7 +487,7 @@
     </section>
 
     <!-- Approach -->
-    <section id="approach" style="background:var(--surface-2)">
+    <section id="approach">
       <div class="wrap">
         <div class="eyebrow">Approach</div>
         <h2 class="section-title">How I test an AI chatbot</h2>
@@ -443,7 +511,7 @@
     </section>
 
     <!-- Stories -->
-    <section>
+    <section style="background:var(--surface-2)">
       <div class="wrap">
         <div class="eyebrow">Highlights</div>
         <h2 class="section-title">Bugs my tests caught</h2>
@@ -472,7 +540,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" style="background:var(--surface-2)">
+    <section id="contact">
       <div class="wrap contact">
         <div class="eyebrow">Contact</div>
         <h2 class="section-title">Let's work together</h2>
