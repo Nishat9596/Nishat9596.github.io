@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nishat Shareef – QA Tester for AI Products</title>
-  <meta name="description" content="Nishat Shareef – QA Tester in Dubai focused on AI products: LLM chatbot and voice agent testing, Playwright automation, API and load testing.">
-  <meta property="og:title" content="Nishat Shareef – QA Tester for AI Products">
-  <meta property="og:description" content="LLM chatbot and voice agent testing, Playwright automation, API and load testing. Based in Dubai, open to work.">
+  <title>Nishat Shareef – QA Engineer (Manual &amp; Automation)</title>
+  <meta name="description" content="Nishat Shareef – QA Engineer in Dubai: manual and automation testing, Playwright, API testing with Postman, performance testing with k6, and AI/LLM testing. Open to QA roles.">
+  <meta property="og:title" content="Nishat Shareef – QA Engineer (Manual &amp; Automation)">
+  <meta property="og:description" content="Manual and automation testing, Playwright, API and performance testing, plus AI/LLM testing. Based in Dubai, open to QA roles.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nishat9596.github.io/">
   <meta name="theme-color" content="#4f46e5">
@@ -178,9 +178,12 @@
     .job-intro { margin: 0; }
     .job-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 28px; }
     .job h4 { margin: 0 0 6px; font-size: .95rem; color: var(--accent-2); }
-    .job ul { margin: 0; padding-left: 18px; }
+    .job ul, .project .job-grid ul { margin: 0; padding-left: 18px; }
     .job li { margin: 5px 0; }
     @media (max-width: 860px) { .job-grid { grid-template-columns: 1fr; } }
+
+    .project.wide { grid-column: 1 / -1; }
+    .project h4 { margin: 0 0 6px; font-size: .95rem; color: var(--accent-2); }
 
     /* Projects */
     .projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
@@ -247,7 +250,6 @@
       <a class="brand" href="#top">Nishat<span>.</span>QA</a>
       <nav class="nav-links" id="nav">
         <a href="#about">About</a>
-        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#approach">Approach</a>
@@ -271,9 +273,9 @@
         <img class="photo" src="nishat.jpg" alt="Photo of Nishat Shareef" width="480" height="480">
       </div>
       <div class="hero-text">
-      <span class="badge">Open to work · Immediate joiner</span>
-      <h1>Nishat Shareef<br><span class="grad">QA Tester for AI products</span></h1>
-      <p class="lead">I test LLM-powered chatbots and voice agents to make sure they give correct answers, don't make things up, stay safe, and keep working under load. I back this up with test automation in Playwright, Python, Postman and k6.</p>
+      <span class="badge">Open to QA roles · Immediate joiner</span>
+      <h1>Nishat Shareef<br><span class="grad">QA Engineer · Manual &amp; Automation</span></h1>
+      <p class="lead">I make sure software works the way users expect. I design test cases from user stories, find and track bugs, and automate regression with Playwright, Postman, Python and k6. I also have hands-on experience testing AI agents and chatbots.</p>
       <div class="cta">
         <a class="btn primary" href="#projects">View my projects</a>
         <a class="btn" href="https://www.linkedin.com/in/nishat-shareef-qa" target="_blank" rel="noopener">LinkedIn</a>
@@ -304,14 +306,15 @@
       <div class="wrap about">
         <div>
           <div class="eyebrow">About me</div>
-          <h2 class="section-title">Quality for products that think</h2>
-          <p>I'm a QA tester with a computer science background and 5 years in IT. Since November 2023 I've been a <b>QA Software Tester at Leoforce</b>, a product company, where I test an AI-powered recruiting platform end to end, from user stories to release sign-off. That includes checking that its AI agent understands prompts and recommends the right candidates.</p>
-          <p>Today I focus on <b>testing AI products</b>. AI answers change from one run to the next, so my tests check <b>key facts and behaviour</b> instead of exact wording. I look for hallucinations, inconsistent answers, prompt injection and slow responses, and I automate those checks so they run on every change.</p>
+          <h2 class="section-title">Quality you can release with confidence</h2>
+          <p>I'm a QA engineer with a computer science background and 5 years in IT. At <b>Leoforce</b>, a product company, I test an AI-powered recruiting platform end to end, from user stories and test cases to JIRA defects, automation and QA sign-off before each release.</p>
+          <p>I'm open to <b>QA roles in any domain</b>: product companies, banking and fintech, e-commerce and more. My core skills work anywhere: functional and regression testing, API testing, database checks, UI automation and performance testing. I also bring hands-on experience <b>testing AI features</b>, where answers change from run to run, so I check key facts and behaviour instead of exact wording.</p>
         </div>
         <div class="card">
           <ul class="facts">
-            <li><span>Current role</span><b>QA Software Tester, Leoforce</b></li>
-            <li><span>Focus</span><b>LLM chatbots &amp; voice agents</b></li>
+            <li><span>Role</span><b>QA Engineer (Manual &amp; Automation)</b></li>
+            <li><span>Strengths</span><b>Web, API, automation &amp; AI testing</b></li>
+            <li><span>Open to</span><b>Product, banking, fintech, e-commerce</b></li>
             <li><span>Location</span><b>Dubai, UAE</b></li>
             <li><span>Availability</span><b>Immediate</b></li>
             <li><span>Education</span><b>Bachelor's, Computer Science</b></li>
@@ -321,83 +324,29 @@
       </div>
     </section>
 
-    <!-- Experience -->
-    <section id="experience" style="background:var(--surface-2)">
-      <div class="wrap">
-        <div class="eyebrow">Experience</div>
-        <h2 class="section-title">Work experience</h2>
-        <p class="section-sub">Hands-on QA in an Agile team at a product company, covering manual testing, automation and AI agent testing.</p>
-        <article class="card job">
-          <div class="job-head">
-            <div>
-              <h3>QA Software Tester – Manual &amp; Automation</h3>
-              <div class="job-co">Leoforce · Product company · Full-time · Hybrid</div>
-            </div>
-            <span class="job-dates">Nov 2023 – Present</span>
-          </div>
-          <p class="job-intro">I test <b>Connect 2.0</b>, an AI-powered recruiting platform, across its job management, candidate search, pipeline and SMS/email communication modules.</p>
-          <div class="job-grid">
-            <div>
-              <h4>AI agent testing</h4>
-              <ul>
-                <li>Validate the AI agent's behaviour with varied prompts, search queries and job criteria, and check that it understands the intent and returns the right results</li>
-                <li>Flag cases where the bot misreads a prompt, returns irrelevant candidates or ranks matches incorrectly</li>
-                <li>Cross-check AI candidate recommendations against the actual job requirements and the database, so the candidates it surfaces are accurate and relevant</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Functional &amp; regression testing</h4>
-              <ul>
-                <li>Review user stories and acceptance criteria, then design and run functional, regression, smoke and sanity test cases</li>
-                <li>Validate data consistency across the UI, API responses and the database, and confirm status updates show everywhere</li>
-                <li>Log and track defects in JIRA with clear steps to reproduce, retest fixes and run regression on the affected areas</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Automation &amp; API</h4>
-              <ul>
-                <li>Build UI automation with Playwright (JavaScript/TypeScript) for reusable end-to-end regression flows, version-controlled in Git/GitHub</li>
-                <li>Validate REST APIs with Postman and pick stable scenarios for automated regression coverage</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Agile process</h4>
-              <ul>
-                <li>Take part in daily stand-ups and sprint ceremonies</li>
-                <li>Give QA sign-off before each release</li>
-              </ul>
-            </div>
-          </div>
-          <div class="chips">
-            <span class="chip hl">AI agent testing</span><span class="chip hl">Playwright</span><span class="chip">TypeScript</span><span class="chip">JavaScript</span><span class="chip hl">Postman</span><span class="chip">JIRA</span><span class="chip">SQL / database checks</span><span class="chip">Git/GitHub</span><span class="chip">Agile/Scrum</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" style="background:var(--surface-2)">
       <div class="wrap">
         <div class="eyebrow">Skills</div>
         <h2 class="section-title">What I work with</h2>
         <p class="section-sub">The highlighted skills appear in the projects below, so you can see them in action.</p>
         <div class="skills">
           <div class="card skill">
-            <h3>AI &amp; LLM testing</h3>
+            <h3>Test design &amp; manual testing</h3>
             <div class="chips">
-              <span class="chip hl">Hallucination testing</span><span class="chip hl">Golden test sets</span><span class="chip hl">Prompt injection</span><span class="chip hl">Consistency checks</span><span class="chip hl">Release regression</span><span class="chip">Voice agent testing</span><span class="chip">Conversation flows</span>
+              <span class="chip hl">Test plans</span><span class="chip hl">Test cases</span><span class="chip hl">Functional</span><span class="chip hl">Regression</span><span class="chip">Smoke &amp; sanity</span><span class="chip hl">Boundary values</span><span class="chip">User stories &amp; acceptance criteria</span><span class="chip hl">Bug reports</span>
             </div>
           </div>
           <div class="card skill">
             <h3>Test automation</h3>
             <div class="chips">
-              <span class="chip hl">Playwright</span><span class="chip hl">JavaScript</span><span class="chip">TypeScript</span><span class="chip hl">Python</span><span class="chip hl">pytest</span><span class="chip">Data-driven tests</span>
+              <span class="chip hl">Playwright</span><span class="chip hl">JavaScript</span><span class="chip">TypeScript</span><span class="chip hl">Python</span><span class="chip hl">pytest</span><span class="chip">End-to-end regression</span>
             </div>
           </div>
           <div class="card skill">
-            <h3>API testing</h3>
+            <h3>API &amp; data testing</h3>
             <div class="chips">
-              <span class="chip hl">Postman</span><span class="chip hl">Newman</span><span class="chip hl">REST APIs</span><span class="chip hl">JSON schema</span><span class="chip">Auth &amp; negative tests</span>
+              <span class="chip hl">Postman</span><span class="chip hl">Newman</span><span class="chip hl">REST APIs</span><span class="chip hl">JSON schema</span><span class="chip">Auth &amp; negative tests</span><span class="chip">SQL / database checks</span>
             </div>
           </div>
           <div class="card skill">
@@ -407,15 +356,15 @@
             </div>
           </div>
           <div class="card skill">
-            <h3>Test design</h3>
+            <h3>AI &amp; LLM testing</h3>
             <div class="chips">
-              <span class="chip hl">Test plans</span><span class="chip hl">Test cases</span><span class="chip hl">Boundary values</span><span class="chip hl">Bug reports</span><span class="chip">Functional</span><span class="chip">Regression</span><span class="chip">Smoke &amp; sanity</span><span class="chip">Risk-based testing</span>
+              <span class="chip hl">AI agent testing</span><span class="chip hl">Hallucination checks</span><span class="chip hl">Prompt injection</span><span class="chip hl">Consistency checks</span><span class="chip">Chatbot &amp; voice testing</span>
             </div>
           </div>
           <div class="card skill">
-            <h3>Tools &amp; CI</h3>
+            <h3>Tools &amp; process</h3>
             <div class="chips">
-              <span class="chip hl">GitHub Actions</span><span class="chip hl">Git &amp; GitHub</span><span class="chip">JIRA</span><span class="chip">SQL</span><span class="chip">Agile/Scrum</span><span class="chip">Excel</span><span class="chip">Word</span><span class="chip">Outlook</span><span class="chip">PowerPoint</span>
+              <span class="chip">JIRA</span><span class="chip hl">Git &amp; GitHub</span><span class="chip hl">GitHub Actions</span><span class="chip">Agile/Scrum</span><span class="chip">Excel</span><span class="chip">Word</span><span class="chip">Outlook</span><span class="chip">PowerPoint</span>
             </div>
           </div>
         </div>
@@ -423,12 +372,51 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" style="background:var(--surface-2)">
+    <section id="projects">
       <div class="wrap">
         <div class="eyebrow">Projects</div>
-        <h2 class="section-title">Portfolio projects</h2>
-        <p class="section-sub">Each project is on GitHub with its tests running automatically on every change. Open any repo and you'll see a green "passing" badge.</p>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-sub">My work project at Leoforce, followed by portfolio projects on GitHub. Each GitHub project runs its tests automatically on every change, so you'll see a green "passing" badge.</p>
         <div class="projects">
+
+          <article class="card project wide">
+            <div class="project-top"><h3>AI Recruiting Platform – Connect 2.0</h3><span class="tag">Work project · Leoforce</span></div>
+            <p>End-to-end QA for a product company's AI-powered recruiting platform, covering job management, candidate search, pipeline and SMS/email communication.</p>
+            <div class="job-grid">
+              <div>
+                <h4>Functional &amp; regression testing</h4>
+                <ul>
+                  <li>Review user stories and acceptance criteria, then design and run functional, regression, smoke and sanity test cases</li>
+                  <li>Validate data consistency across the UI, API responses and the database, and confirm status updates show everywhere</li>
+                  <li>Log and track defects in JIRA with clear steps to reproduce, retest fixes and run regression on the affected areas</li>
+                </ul>
+              </div>
+              <div>
+                <h4>AI agent testing</h4>
+                <ul>
+                  <li>Test the AI agent with varied prompts, search queries and job criteria to check it understands the intent and returns the right results</li>
+                  <li>Flag misread prompts, irrelevant candidates and wrong rankings</li>
+                  <li>Cross-check AI candidate recommendations against the job requirements and the database</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Automation &amp; API</h4>
+                <ul>
+                  <li>Build Playwright (JavaScript/TypeScript) end-to-end regression flows, version-controlled in Git/GitHub</li>
+                  <li>Validate REST APIs with Postman and pick stable scenarios for automated regression</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Agile process</h4>
+                <ul>
+                  <li>Take part in daily stand-ups and sprint ceremonies</li>
+                  <li>Give QA sign-off before each release</li>
+                </ul>
+              </div>
+            </div>
+            <div class="chips"><span class="chip">Manual testing</span><span class="chip">Playwright</span><span class="chip">TypeScript</span><span class="chip">Postman</span><span class="chip">JIRA</span><span class="chip">SQL / database checks</span><span class="chip">Agile/Scrum</span></div>
+          </article>
+
 
           <article class="card project">
             <div class="project-top"><h3>LLM Chatbot Evaluation</h3><span class="tag">AI testing</span></div>
@@ -487,7 +475,7 @@
     </section>
 
     <!-- Approach -->
-    <section id="approach">
+    <section id="approach" style="background:var(--surface-2)">
       <div class="wrap">
         <div class="eyebrow">Approach</div>
         <h2 class="section-title">How I test an AI chatbot</h2>
@@ -511,7 +499,7 @@
     </section>
 
     <!-- Stories -->
-    <section style="background:var(--surface-2)">
+    <section>
       <div class="wrap">
         <div class="eyebrow">Highlights</div>
         <h2 class="section-title">Bugs my tests caught</h2>
@@ -540,11 +528,11 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" style="background:var(--surface-2)">
       <div class="wrap contact">
         <div class="eyebrow">Contact</div>
         <h2 class="section-title">Let's work together</h2>
-        <p class="section-sub" style="margin-left:auto;margin-right:auto">I'm looking for QA and AI testing roles in the UAE, and I can join immediately.</p>
+        <p class="section-sub" style="margin-left:auto;margin-right:auto">I'm looking for QA roles in the UAE (product companies, banking and fintech, e-commerce and more), and I can join immediately.</p>
         <div class="cta">
           <a class="btn primary" href="mailto:nishatthahniyath@gmail.com">nishatthahniyath@gmail.com</a>
           <a class="btn" href="https://www.linkedin.com/in/nishat-shareef-qa" target="_blank" rel="noopener">LinkedIn</a>
@@ -555,7 +543,7 @@
   </main>
 
   <footer>
-    <div class="wrap">© <span id="year">2026</span> Nishat Shareef · QA Tester · Dubai, UAE</div>
+    <div class="wrap">© <span id="year">2026</span> Nishat Shareef · QA Engineer · Dubai, UAE</div>
   </footer>
 
   <script>
