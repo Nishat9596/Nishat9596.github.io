@@ -1,6 +1,6 @@
 # nishat9596.github.io
 
-Portfolio website of **Nishat Shareef**, a QA Tester focused on AI products (LLM chatbots and voice agents).
+Portfolio website of **Nishat Shareef**, a QA Engineer (manual and automation testing): Playwright, API testing with Postman, k6 performance testing and AI/LLM testing.
 
 **Live site:** https://nishat9596.github.io
 
